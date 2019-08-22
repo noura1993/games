@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script src="hangman.js"></script>
+    <link rel="stylesheet" href="hangman.css">
+    <title>Hangman multiplayer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="intro">
+            <label id="firstWordLabel">Player 1 word</label>
+            <input id="firstWord" type="password">
+            <br><br>
+            <label>Player 2 word</label>
+            <input id="secondWord" type="password">
+            <br><br>
+            <button type="button" onclick="startGame()">Start game</button>
+        </div>
+        <div id="game" class="game">
+            <h3 id="playerTurn"></h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Player 1</th>
+                    <th>Player 2</th>
+                </tr>
+                <tr>
+                    <td>Letters</td>
+                    <td id="hiddenWord1"></td>
+                    <td id="hiddenWord2"></td>
+                </tr>
+                <tr>
+                    <td>Guessed letters</td>
+                    <td id="guessedLetters1"></td>
+                    <td id="guessedLetters2"></td>
+                </tr>
+            </table>
+            <br><br>
+            <button id="playAgain" type="button" onclick="playAgain()">Play Again</button>
+        </div>
+    </div>
+</body>
+
+</html>
